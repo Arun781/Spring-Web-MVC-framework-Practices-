@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet(loadOnStartup = 7,urlPatterns = "/sent")
 public class OreoMilkShakeServlets extends HttpServlet {
 public OreoMilkShakeServlets() {
-	System.out.println("Running the no arg OreoMilkShakeServlets");
+	System.out.println("Running the no arg constructor OreoMilkShakeServlets");
 }
 @Override
 	protected void doPut(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

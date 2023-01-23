@@ -11,13 +11,13 @@ import javax.servlet.http.HttpServletResponse;
 public class CoffeeServlets extends HttpServlet {
 
 	public CoffeeServlets() {
-		System.out.println("Created CoffeeServlets no arg");
+		System.out.println("Running the no arg constructor CoffeeServlets");
 	}
 
 @Override
 protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, 
 IOException {
-	System.out.println("Created doGet");
+	System.out.println("Running doGet");
 }
 
 }

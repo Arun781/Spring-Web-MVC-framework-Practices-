@@ -5,7 +5,7 @@ import javax.servlet.http.HttpServlet;
 @WebServlet(loadOnStartup = 4, urlPatterns = "/contact me")
 public class MilkShakeServlet extends HttpServlet {
 public MilkShakeServlet() {
-	System.out.println("Created the no arg MilkShakeServlet....");
+	System.out.println("Running the no arg constructor MilkShakeServlet....");
 }
 @Override
 	public void destroy() {

@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet(loadOnStartup = 3, urlPatterns = "/connect me")
 public class BoostServlets extends HttpServlet {
 public BoostServlets() {
-	System.out.println("Running the no arg BoostServlets");
+	System.out.println("Running the no arg constructor BoostServlets");
 }
 @Override
 	protected void doHead(HttpServletRequest arg0, HttpServletResponse arg1) throws ServletException, IOException {

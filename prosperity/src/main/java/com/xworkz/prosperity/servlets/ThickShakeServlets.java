@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet(loadOnStartup = 6, urlPatterns = "/send")
 public class ThickShakeServlets extends HttpServlet {
 public ThickShakeServlets() {
-	System.out.println("Running the ThickShakeServlets");
+	System.out.println("Running the no arg constructor ThickShakeServlets");
 }
 @Override
 	protected void doOptions(HttpServletRequest arg0, HttpServletResponse arg1) throws ServletException, IOException {
