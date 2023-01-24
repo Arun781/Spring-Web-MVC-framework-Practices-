@@ -3,6 +3,7 @@ package com.xworkz.servlets;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -13,6 +14,10 @@ import javax.servlet.http.HttpServletResponse;
 public class Vodka extends HttpServlet {
 	public Vodka() {
 		System.out.println("Creating the Vodka no arg const.....");
+	}
+	@Override
+	public void init(ServletConfig config) throws ServletException {
+		System.out.println("Running init of Onboarding..");
 	}
 
 	@Override
@@ -32,21 +37,31 @@ public class Vodka extends HttpServlet {
 	@Override
 	protected void doPut(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		System.out.println("Putting the doPut in Vodka");
+		String data1 = "Best Peach,Ciroc Peach.";
+		PrintWriter writer = resp.getWriter();
+		writer.print(data1);
+		resp.setContentType("text/plain");
 	}
 
 	@Override
-	protected void doOptions(HttpServletRequest arg0, HttpServletResponse arg1) throws ServletException, IOException {
+	protected void doOptions(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		System.out.println("Running the doOption in Vodka");
+		String data2 = "Best Peach,Ciroc Peach.";
+		PrintWriter writer = resp.getWriter();
+		writer.print(data2);
+		resp.setContentType("text/plain");
 	}
 
 	@Override
 	protected void doTrace(HttpServletRequest arg0, HttpServletResponse arg1) throws ServletException, IOException {
 		System.out.println("Running the doTrace in Vodka");
 	}
+
 	@Override
 	protected void doHead(HttpServletRequest arg0, HttpServletResponse arg1) throws ServletException, IOException {
 		System.out.println("Running the doHead in Vodka");
 	}
+
 	@Override
 	protected void doDelete(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		System.out.println("Running the doDelete in Vodka");
