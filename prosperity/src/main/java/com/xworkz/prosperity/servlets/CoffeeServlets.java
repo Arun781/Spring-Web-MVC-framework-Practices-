@@ -7,17 +7,17 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-@WebServlet(loadOnStartup = 1,urlPatterns = "/pingme")
+
+@WebServlet(loadOnStartup = 1, urlPatterns = "/pingme")
 public class CoffeeServlets extends HttpServlet {
 
 	public CoffeeServlets() {
-		System.out.println("Running the no arg constructor CoffeeServlets");
+		System.out.println("Running the no arg constructor CoffeeServlets.....");
 	}
 
-@Override
-protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, 
-IOException {
-	System.out.println("Running doGet");
-}
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		System.out.println("Running doGet in CoffeeServlets");
+	}
 
 }

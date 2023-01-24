@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet(loadOnStartup = 2, urlPatterns = "/callme")
 public class TeaServalets extends HttpServlet {
 	public TeaServalets() {
-		System.out.println("Running the no arg constructor TeaServalets");
+		System.out.println("Running the no arg constructor TeaServalets......");
 	}
 
 	@Override

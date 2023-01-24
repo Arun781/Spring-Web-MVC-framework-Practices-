@@ -7,13 +7,15 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
 @WebServlet(loadOnStartup = 6, urlPatterns = "/send")
 public class ThickShakeServlets extends HttpServlet {
-public ThickShakeServlets() {
-	System.out.println("Running the no arg constructor ThickShakeServlets");
-}
-@Override
-	protected void doOptions(HttpServletRequest arg0, HttpServletResponse arg1) throws ServletException, IOException {
-		System.out.println("Running the doOptions ThickShakeServlets");
+	public ThickShakeServlets() {
+		System.out.println("Running the no arg constructor ThickShakeServlets......");
+	}
+
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		System.out.println("Running doGet in ThickShakeServlets");
 	}
 }

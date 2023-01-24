@@ -10,11 +10,12 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet(loadOnStartup = 5, urlPatterns = "/checkme")
 public class ColdCoffeeServlets extends HttpServlet {
 	public ColdCoffeeServlets() {
-		System.out.println("Running the no arg constructor ColdCoffeeServlets");
+		System.out.println("Running the no arg constructor ColdCoffeeServlets......");
 	}
 	@Override
-	protected void doDelete(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		System.out.println("Running the doDelete in ColdCoffeeServlets");
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, 
+	IOException {
+		System.out.println("Running doGet in ColdCoffeeServlets");
 	}
 
 }
