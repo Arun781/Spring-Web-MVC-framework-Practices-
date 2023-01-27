@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Web Series</title>
+<link rel="Stylesheet" href="index.css">
+</head>
+<body>
+<div class="web">
+<form action="series">
+  <label for="fname">Name:</label>
+  <input type="text" id="name" name="name"><br><br>
+  <label for="lname">Lang:</label>
+  <input type="text" id="lname" name="lname"><br><br>
+  <label for="quantity">Number of Episodes (between 1 and 10):</label>
+  <input type="number" id="quantity" name="quantity" min="1" max="10">
+  <br>
+  <label for="Budget">Budget(between 1k and 1000crore):</label>
+  <input type="number" id="Budget" name="Budget" min="1" max="1000">
+  <br>
+  <h5>Please select your OTT platform:</h5>
+  <div class="OttSel">
+  <input type="radio" id="Amazon" name="fav_language" value="Amazon">
+  <label for="html">Amazon</label><br>
+  <input type="radio" id="Netflix" name="fav_language" value="Netflix">
+  <label for="css">Netflix</label><br>
+  <input type="radio" id="Hotstar" name="fav_language" value="Hotstar">
+  <label for="javascript">Hotstar</label>
+</div>
+  <br>
+  <input type="submit" value="Submit">
+</form>
+</div>
+</body>
+</html>
