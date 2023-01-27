@@ -22,6 +22,8 @@ public class LoneServlet extends HttpServlet {
 		String mname=req.getParameter("middlename");
 		String lname=req.getParameter("lastname");
 		String mail=req.getParameter("Gmail");
+		String gitHub = req.getParameter("GitHub");
+		String linkedIn = req.getParameter("LinkedIn");
 		String location=req.getParameter("location");
 		String bday=req.getParameter("birthday");
 		String dist=req.getParameter("Dist");
@@ -37,10 +39,13 @@ public class LoneServlet extends HttpServlet {
 		String pass = req.getParameter("pass");
 		String repass = req.getParameter("repass");
 		
+		
 		System.out.println(fname);
 		System.out.println(mname);
 		System.out.println(lname);
 		System.out.println(mail);
+		System.out.println(gitHub);
+		System.out.println(linkedIn);
 		System.out.println(location);
 		System.out.println(bday);
 		System.out.println(dist);
@@ -48,6 +53,7 @@ public class LoneServlet extends HttpServlet {
 		System.out.println(country);
 		System.out.println(nationality);
 		System.out.println(lang);
+		System.out.println(status);
 		System.out.println(fname);
 		System.out.println(gender);
 		System.out.println(code);
@@ -62,6 +68,8 @@ public class LoneServlet extends HttpServlet {
 		writer.print(mname);
 		writer.print(lname);
 		writer.print(mail);
+		writer.print(gitHub);
+		writer.print(linkedIn);
 		writer.print(location);
 		writer.print(bday);
 		writer.print(dist);
@@ -69,6 +77,7 @@ public class LoneServlet extends HttpServlet {
 		writer.print(country);
 		writer.print(nationality);
 		writer.print(lang);
+		writer.print(status);
 		writer.print(gender);
 		writer.print(code);
 		writer.print(phone);
