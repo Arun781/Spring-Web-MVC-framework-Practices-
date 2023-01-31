@@ -40,7 +40,7 @@ public class PumaSneakersServlets extends HttpServlet {
 			writer.print("</span>");
 		} else {
 			writer.print("<span style='color:blue'>");
-			writer.print("Please provide valid Company employee information");
+			writer.print("Please provide valid Company information");
 			writer.print("</span>");
 		}
 		writer.print("</h1>");
