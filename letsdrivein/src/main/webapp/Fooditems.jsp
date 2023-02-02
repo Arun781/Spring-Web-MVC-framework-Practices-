@@ -4,20 +4,21 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Arun</title>
+<title>X-Workz</title>
 </head>
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
 	rel="stylesheet"
 	integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
 	crossorigin="anonymous">
-
-
-<body>
 	<script
 		src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
 		crossorigin="anonymous"></script>
+
+
+<body>
+	
 	<nav class="navbar navbar-expand-lg navbar-light bg-dark">
 		<div class="container-fluid">
 			<a class="navbar-brand" href="#"><img alt=""
@@ -57,23 +58,24 @@
 	</nav>
 	<form action="share" method="post">
 		<div class="mb-3">
-			<label for="formFile" class="food" >Foodname</label>
-			 <input class="form-control" type="text" id="foodname" name="foodname"
+			<label for="formFile" class="food">Foodname</label> <input
+				class="form-control" type="text" id="foodname" name="foodname"
 				placeholder="Enter your food name">
 		</div>
-		Select your food type
-		 <select class="form-select" aria-label="Default select example" name="type">
+		Select your food type <select class="form-select"
+			aria-label="Default select example" name="type">
 			<option selected>Selct your type of food</option>
 			<option value="1">Veg</option>
 			<option value="2">Non-Veg</option>
 			<option value="3">Both</option>
-		</select> <label for="customRange2" class="form-label">Quantity</label>
-		 <input type="range" class="form-range" min="0" max="10" name="Quantity"
+		</select> <label for="customRange2" class="form-label">Quantity</label> <input
+			type="range" class="form-range" min="0" max="10" name="Quantity"
 			id="customRange2">
 
 		<div class="mb-3">
-			<label for="formFile" class="food" >Price</label>
-		 <input class="form-control"  type="text" id="foodname" name="Price" placeholder="Enter your food Price">
+			<label for="formFile" class="food">Price</label> <input
+				class="form-control" type="text" id="foodname" name="Price"
+				placeholder="Enter your food Price">
 		</div>
 		<button type="Submit" class="btn btn-dark">Send</button>
 	</form>

@@ -16,10 +16,10 @@ public class FoodItemComponent {
 	public String onSend(@RequestParam String foodname, @RequestParam String type, @RequestParam int Quantity,
 			@RequestParam double Price) {
 		System.out.println("Running the onSend:-");
-		System.out.println("foodname"+foodname);
-		System.out.println("type"+type);
-		System.out.println("Quantity"+Quantity);
-		System.out.println("Price"+Price);
+		System.out.println("foodname:-"+foodname);
+		System.out.println("type:-"+type);
+		System.out.println("Quantity:-"+Quantity);
+		System.out.println("Price:-"+Price);
 		return "index.jsp";
 	}
 }
