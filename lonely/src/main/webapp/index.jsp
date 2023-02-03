@@ -42,9 +42,13 @@
         <a class="nav-link disabled" href="#">Disabled</a>
       </li>  
     </ul>
-   
-      <li class="nav-item" style=""><a href="lonely.jsp">Sign up</a></li>
-     
+   		<div class="link">
+     <a href="lonely.jsp">Sign up</a>
+          </div>
+          
+          	<div class="link" align="right" style="padding-left: 370px">
+     <a href="lonely.jsp">Register here</a>
+          </div>
     <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
