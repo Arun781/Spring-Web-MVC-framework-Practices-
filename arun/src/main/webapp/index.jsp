@@ -72,11 +72,12 @@
 	
 	<div class="addar">
 		<form action="addar" method="get">
-		Click here to get your Addar number :-
+		 Click here to get your Addar number :-
 		<button>click for addar</button>
 		<h6>${addar}</h6>
 		</form>
 	</div>
+	<br>
 	<div class="number">
 		<form action="number" method="get">
 		Click here to get your number :-
